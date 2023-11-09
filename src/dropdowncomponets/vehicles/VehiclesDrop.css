@@ -1,0 +1,45 @@
+.App{
+    display: flex;
+    
+  }
+  .vertical{
+    border-left: 2px solid rgb(196, 200, 196);
+    height: 500px;
+  }
+  .textmsg{
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  /* p{
+     transition-duration: 2s;
+  }
+  p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  } */
+  .textmsg p{
+    /* /* display: inline-block; */
+    position: relative; 
+    color: 
+  #000000;
+  }
+  
+  .textmsg p:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #000000;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .textmsg p:hover:after {
+    width: 80%;
+    transform: scaleX(1);
+    transform-origin: center;
+  }

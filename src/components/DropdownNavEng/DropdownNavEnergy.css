@@ -1,0 +1,36 @@
+.dropdown-menu {
+  background: rgb(255, 255, 255);
+  width: 100vw;
+  position: absolute;
+  top: -90%;
+  left: 0%;
+  list-style: none;
+  text-align: start;
+  animation: fadein 1s;
+}
+@keyframes fadein{
+  0%{opacity: 0;}
+  /* 25%{opacity: 0.25;}
+  50%{opacity: 0.50;}
+  75%{opacity: 0.75;} */
+  100%{opacity: 1;}
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+}

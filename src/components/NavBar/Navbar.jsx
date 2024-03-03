@@ -7,13 +7,17 @@ import { IoIosContact } from "react-icons/io";
 import { Link } from "react-router-dom";
 import DropdownNav from "../DropdownNav/DropdownNav";
 import DropdownNavEnergy from "../DropdownNavEng/DropdownNavEnergy";
+import DropdownNavCharge from "../DropdownNavCharge/DropdownNavCharge";
+import DropdownNavDis from "../DropdownNavDis/DropdownNavDis";
+import DropdownNavshop from "../DropdownNavshop/DropdownNavshop";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdownengery, setDropdownenergy] = useState(false);
   const [dropdowncharge, setDropdowncharge] = useState(false);
-
+  const [dropdowndis, setDropdowndis] = useState(false);
+  const [dropdownshop, setDropdownshop] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -62,6 +66,36 @@ function Navbar() {
       setDropdowncharge(false);
     }
   };
+  const onMouseEnterdis = () => {
+    if (window.innerWidth < 960) {
+      setDropdowndis(false);
+    } else {
+      setDropdowndis(true);
+    }
+  };
+
+  const onMouseLeavedis = () => {
+    if (window.innerWidth < 960) {
+      setDropdowndis(false);
+    } else {
+      setDropdowndis(false);
+    }
+  };
+  const onMouseEntershop = () => {
+    if (window.innerWidth < 960) {
+      setDropdownshop(false);
+    } else {
+      setDropdownshop(true);
+    }
+  };
+
+  const onMouseLeaveshop = () => {
+    if (window.innerWidth < 960) {
+      setDropdownshop(false);
+    } else {
+      setDropdownshop(false);
+    }
+  };
 
   return (
     <>
@@ -94,39 +128,51 @@ function Navbar() {
               </Link>
               {dropdownengery && <DropdownNavEnergy />}
             </li>
-            {/* <li
+            <li
               className="nav-item"
-              onMouseEnter={onMouseEnterenergy}
-              onMouseLeave={onMouseLeaveenegry}
+              onMouseEnter={onMouseEntercharge}
+              onMouseLeave={onMouseLeavecharge}
             >
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Charging
               </Link>
               {dropdowncharge && <DropdownNavCharge />}
-            </li> */}
-            <li className="nav-item">
-              <Link
-                to="/Charging"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Charging
-              </Link>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              onMouseLeave={onMouseLeavedis}
+              onMouseEnter={onMouseEnterdis}
+            >
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Discover
+              </Link>
+              {dropdowndis && <DropdownNavDis />}
+            </li>
+            <li
+              className="nav-item"
+              onMouseLeave={onMouseLeaveshop}
+              onMouseEnter={onMouseEntershop}
+            >
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Shop
+              </Link>
+              {dropdownshop && <DropdownNavshop />}
+            </li>
+
+            {/* <li className="nav-item">
               <Link
                 to="/Discover"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Discover
+                dis
               </Link>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* <li className="nav-item">
               <Link to="/Shop" className="nav-links" onClick={closeMobileMenu}>
                 Shop
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="header_right">

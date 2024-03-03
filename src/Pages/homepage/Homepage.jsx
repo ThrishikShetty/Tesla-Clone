@@ -6,6 +6,7 @@ import SolarPanels from "../../assets/Desktop-SolarPanels.jpeg";
 import Modely from "../../assets/Desktop-ModelY.jpeg";
 import Models from "../../assets/models.jpg";
 import "./Homepage.css";
+import home from "../../assets/Desktop-SolarRoof.jpeg";
 function Homepage() {
   return (
     <div className="items_container">
@@ -21,7 +22,7 @@ function Homepage() {
         twoButtons="true"
         first
       />
-      <Item
+      {/* <Item
         title="Model S"
         desc="Model S
       From $71,090*
@@ -34,7 +35,7 @@ function Homepage() {
         rightBtnLink=""
         twoButtons="true"
         first
-      />
+      /> */}
       <Item
         title="Model 3"
         desc="Lease starting at $399/mo*"
@@ -42,13 +43,13 @@ function Homepage() {
         backgroundImg={Model3}
         leftBtnTxt="ORDER NOW"
         leftBtnLink=""
-        rightBtnTxt="LEARN MORE"
+        rightBtnTxt="DEMO DRIVE"
         rightBtnLink=""
         twoButtons="true"
         first
       />
       <Item
-        title="Model S "
+        title="Model X"
         desc=" From $71,090*After Est. Gas Savings"
         descLink=""
         backgroundImg={ModelX}
@@ -60,10 +61,22 @@ function Homepage() {
         first
       />
       <Item
-        title="Lowest Cost Solar Panels in America"
+        title="Lowest Cost Solar Panels "
         desc="Money-back guarantee"
         descLink=""
         backgroundImg={SolarPanels}
+        leftBtnTxt="ORDER NOW"
+        leftBtnLink=""
+        rightBtnTxt="LEARN MORE"
+        rightBtnLink=""
+        twoButtons="true"
+        first
+      />
+      <Item
+        title="Lowest Cost Solar Panels"
+        desc="Money-back guarantee"
+        descLink=""
+        backgroundImg={home}
         leftBtnTxt="ORDER NOW"
         leftBtnLink=""
         rightBtnTxt="LEARN MORE"

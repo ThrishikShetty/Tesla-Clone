@@ -3,7 +3,7 @@
   width: 100vw;
   position: absolute;
   top: -90%;
-  left: 0%;
+  left: -1%;
   list-style: none;
   text-align: start;
   animation: fadein 1s;

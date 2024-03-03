@@ -2,13 +2,19 @@
     display: flex;
     
   }
+.veh{
+  display: flex;
+    padding-top: 100px;
+    
+  }
   .vertical{
     border-left: 2px solid rgb(196, 200, 196);
-    height: 500px;
+    height: 350px;
   }
-  .textmsg{
+  .textmsg1{
+    padding-top: 0;
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   /* p{
      transition-duration: 2s;
@@ -17,14 +23,14 @@
     text-decoration: underline;
     cursor: pointer;
   } */
-  .textmsg p{
+  .textmsg1 p{
     /* /* display: inline-block; */
     position: relative; 
     color: 
   #000000;
   }
   
-  .textmsg p:after {
+  .textmsg1 p:after {
     content: '';
     position: absolute;
     width: 0;
@@ -38,7 +44,7 @@
     transition: transform 0.25s ease-out;
   }
   
-  .textmsg p:hover:after {
+  .textmsg1 p:hover:after {
     width: 80%;
     transform: scaleX(1);
     transform-origin: center;

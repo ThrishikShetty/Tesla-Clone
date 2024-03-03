@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { MenuItems } from "../MenuItems/MenuItems";
+
 import "./DropdownNav.css";
-import { Link } from "react-router-dom";
+
 import VehiclesDrop from "../../dropdowncomponets/vehicles/VehiclesDrop";
 function DropdownNav() {
   const [click, setClick] = useState(false);

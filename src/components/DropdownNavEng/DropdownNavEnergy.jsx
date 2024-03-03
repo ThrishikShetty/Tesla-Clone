@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { MenuItems } from "../MenuItems/MenuItems";
 import "./DropdownNavEnergy.css";
-import { Link } from "react-router-dom";
-import VehiclesDrop from "../../dropdowncomponets/vehicles/VehiclesDrop";
 import Shopdrop from "../../dropdowncomponets/shop/Shopdrop";
 function DropdownNav() {
   const [click, setClick] = useState(false);

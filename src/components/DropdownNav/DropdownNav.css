@@ -1,12 +1,15 @@
 .dropdown-menu {
   background: rgb(255, 255, 255);
   position:absolute;
-  padding-top: 8%;
+  padding-top: 3%;
   margin-top: 2%;
   margin-left: 0%;
   margin-right: 40%;
-  top: -90%;
-  left: 0%;
+  margin-left: -2%;
+  top: 0%;
+  left: -1%;
+  
+  /* bottom: 1%; */
   list-style: none;
   text-align: start;
   animation: fadein 1s;

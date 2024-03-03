@@ -1,35 +1,24 @@
 .App{
     display: flex;
-    
+    justify-content: center;
+    align-items: flex-start;
   }
-  .sh{
-    display: flex;
-      padding-top: 50px;
-      
-    }
-  .vertical1{
-    border-left: 2px solid rgb(196, 200, 196);
-    height: 270px;
-  }
-  .textmsg2{
+span{
+    color: #bebcbc;
+}
+  .textmsg{
     margin-left: 40px;
     /* margin-top: 40px; */
   }
-  /* p{
-     transition-duration: 2s;
-  }
-  p:hover{
-    text-decoration: underline;
-    cursor: pointer;
-  } */
-  .textmsg2 p{
+  
+  .textmsg p{
     /* /* display: inline-block; */
     position: relative; 
-    color: 
-  #000000;
+    /* color: 
+  #000000; */
   }
   
-  .textmsg2 p:after {
+  .textmsg p:after {
     content: '';
     position: absolute;
     width: 0;
@@ -43,7 +32,7 @@
     transition: transform 0.25s ease-out;
   }
   
-  .textmsg2 p:hover:after {
+  .textmsg p:hover:after {
     width: 80%;
     transform: scaleX(1);
     transform-origin: center;
